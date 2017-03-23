@@ -21,7 +21,7 @@
 
     <div class="container">
       <div class="row form-group">
-        <div class="col-xs-6 col-xs-offset-3">
+        <div class="col-xs-10 col-xs-offset-1">
           <form ng-submit="addComment()" style="margin-top: 30px;">
             <input class="form-control" type="text" ng-model="formContent" placeholder="Comment" style="text-align: center;">
             <button class="btn btn-success" type="submit" style="width: 100%; margin-top: 10px;">Add Comment</button>
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="row">
-        <div ng-repeat="comment in comments | orderBy: '-upvotes'" class="col-xs-6 col-xs-offset-3" style="text-align: center; font-size: 2em;">
+        <div ng-repeat="comment in comments | orderBy: '-upvotes'" class="col-xs-10 col-xs-offset-1" style="text-align: center; font-size: 2em;">
           <div class="row">
             <div class="col-xs-8" style="text-align: left;">
               {{comment.title}} - upvotes: {{comment.upvotes}}
